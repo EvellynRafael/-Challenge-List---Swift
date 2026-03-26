@@ -1,0 +1,16 @@
+func primeNumber(_ number: Int) -> Bool {
+    guard number >= 2 else {
+        return false
+    }
+    
+    for i in 2..<number {
+        if number % i == 0 {
+            return false
+        }
+    }
+    
+    return true
+}
+
+primeNumber(1)
+primeNumber(7)
